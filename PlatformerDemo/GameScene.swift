@@ -11,10 +11,14 @@ import SpriteKit
 class GameScene: SKScene {
 
     var map : JSTileMap = JSTileMap(named: "map.tmx")
-
+    var player = Player()
+    
     override func didMoveToView(view: SKView) {
         self.backgroundColor = .skyBlueColor()
         self.addChild(map)
+        
+        self.player.position = CGPoint(x: 100, y: 175)
+        self.map.addChild(self.player)
     }
     
     override func update(currentTime: CFTimeInterval) {

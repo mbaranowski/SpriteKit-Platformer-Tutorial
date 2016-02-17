@@ -19,6 +19,7 @@
 		B06AE7451C74FC4E00F2D387 /* p1_stand.png in Resources */ = {isa = PBXBuildFile; fileRef = B06AE7411C74FC4E00F2D387 /* p1_stand.png */; };
 		B06AE7461C74FC4E00F2D387 /* tiles_spritesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = B06AE7431C74FC4E00F2D387 /* tiles_spritesheet.png */; };
 		B06AE74C1C74FE7500F2D387 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AE74B1C74FE7500F2D387 /* Utility.swift */; };
+		B06AE74E1C74FF2C00F2D387 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AE74D1C74FF2C00F2D387 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		B06AE7431C74FC4E00F2D387 /* tiles_spritesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiles_spritesheet.png; sourceTree = "<group>"; };
 		B06AE74A1C74FCBE00F2D387 /* PlatformerDemo-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlatformerDemo-BridgingHeader.h"; sourceTree = "<group>"; };
 		B06AE74B1C74FE7500F2D387 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		B06AE74D1C74FF2C00F2D387 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				B06AE7361C74FBFB00F2D387 /* JSTileMap */,
 				B06AE7251C74FB7D00F2D387 /* AppDelegate.swift */,
 				B06AE7271C74FB7D00F2D387 /* GameScene.swift */,
+				B06AE74D1C74FF2C00F2D387 /* Player.swift */,
 				B06AE7291C74FB7D00F2D387 /* GameScene.sks */,
 				B06AE72B1C74FB7D00F2D387 /* Assets.xcassets */,
 				B06AE72D1C74FB7D00F2D387 /* MainMenu.xib */,
@@ -194,6 +197,7 @@
 				B06AE73C1C74FBFB00F2D387 /* JSTileMap.m in Sources */,
 				B06AE7281C74FB7D00F2D387 /* GameScene.swift in Sources */,
 				B06AE73D1C74FBFB00F2D387 /* LFCGzipUtility.m in Sources */,
+				B06AE74E1C74FF2C00F2D387 /* Player.swift in Sources */,
 				B06AE7261C74FB7D00F2D387 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
