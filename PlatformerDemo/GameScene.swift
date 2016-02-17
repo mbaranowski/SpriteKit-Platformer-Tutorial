@@ -13,12 +13,12 @@ class GameScene: SKScene {
     var map : JSTileMap = JSTileMap(named: "map.tmx")
     var player = Player()
     var previousUpdate : CFTimeInterval = 0
-    
+    let initialPosition = CGPoint(x: 100, y: 600)
     override func didMoveToView(view: SKView) {
         self.backgroundColor = .skyBlueColor()
         self.addChild(map)
         
-        self.player.position = CGPoint(x: 100, y: 600)
+        self.player.position = self.initialPosition
         self.map.addChild(self.player)
     }
     
@@ -67,7 +67,7 @@ class GameScene: SKScene {
             let playerCoord = layer.coordForPoint(player.desiredPosition)
             
             if playerCoord.y > self.map.mapSize.height {
-                print("fell out of the world! Game Over")
+                self.onPlayerDied()
                 return
             }
             
@@ -118,6 +118,17 @@ class GameScene: SKScene {
         
         player.velocity *= velocityFactor
         player.position = player.desiredPosition + adjustment
+    }
+    
+    func onPlayerDied() {
+        if !self.player.hidden {
+            delay(1.0) {
+                self.player.position =  self.initialPosition
+                self.player.velocity = CGPoint.zero
+                self.player.hidden = false
+            }
+            self.player.hidden = true
+        }
     }
     
     func tileGID(tileCoords:CGPoint, forLayer layer:TMXLayer) -> Int32 {

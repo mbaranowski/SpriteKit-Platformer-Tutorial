@@ -68,6 +68,15 @@ func clamp(lower lower : CGPoint, upper : CGPoint, _ a : CGPoint) -> CGPoint {
         y: clamp(lower:lower.y, upper:upper.y, a.y))
 }
 
+func delay(delay:Double, closure:()->()) {
+    dispatch_after(
+        dispatch_time(
+            DISPATCH_TIME_NOW,
+            Int64(delay * Double(NSEC_PER_SEC))
+        ),
+        dispatch_get_main_queue(), closure)
+}
+
 extension SKNode {
     func addBoundingBoxNode() {
         let box = SKShapeNode(rect: CGRect(origin: CGPoint(x:-self.frame.size.width*0.5,y:-self.frame.size.height*0.5),
