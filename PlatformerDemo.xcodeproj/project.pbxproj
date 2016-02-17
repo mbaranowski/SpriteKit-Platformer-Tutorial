@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B06AE7261C74FB7D00F2D387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AE7251C74FB7D00F2D387 /* AppDelegate.swift */; };
+		B06AE7281C74FB7D00F2D387 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AE7271C74FB7D00F2D387 /* GameScene.swift */; };
+		B06AE72A1C74FB7D00F2D387 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B06AE7291C74FB7D00F2D387 /* GameScene.sks */; };
+		B06AE72C1C74FB7D00F2D387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B06AE72B1C74FB7D00F2D387 /* Assets.xcassets */; };
+		B06AE72F1C74FB7D00F2D387 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06AE72D1C74FB7D00F2D387 /* MainMenu.xib */; };
+		B06AE73C1C74FBFB00F2D387 /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = B06AE7381C74FBFB00F2D387 /* JSTileMap.m */; };
+		B06AE73D1C74FBFB00F2D387 /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B06AE73A1C74FBFB00F2D387 /* LFCGzipUtility.m */; };
+		B06AE73E1C74FBFB00F2D387 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B06AE73B1C74FBFB00F2D387 /* libz.tbd */; };
+		B06AE7441C74FC4E00F2D387 /* map.tmx in Resources */ = {isa = PBXBuildFile; fileRef = B06AE7401C74FC4E00F2D387 /* map.tmx */; };
+		B06AE7451C74FC4E00F2D387 /* p1_stand.png in Resources */ = {isa = PBXBuildFile; fileRef = B06AE7411C74FC4E00F2D387 /* p1_stand.png */; };
+		B06AE7461C74FC4E00F2D387 /* tiles_spritesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = B06AE7431C74FC4E00F2D387 /* tiles_spritesheet.png */; };
+		B06AE74C1C74FE7500F2D387 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06AE74B1C74FE7500F2D387 /* Utility.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B06AE7221C74FB7D00F2D387 /* PlatformerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatformerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06AE7251C74FB7D00F2D387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B06AE7271C74FB7D00F2D387 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B06AE7291C74FB7D00F2D387 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B06AE72B1C74FB7D00F2D387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B06AE72E1C74FB7D00F2D387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B06AE7301C74FB7D00F2D387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B06AE7371C74FBFB00F2D387 /* JSTileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTileMap.h; sourceTree = "<group>"; };
+		B06AE7381C74FBFB00F2D387 /* JSTileMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTileMap.m; sourceTree = "<group>"; };
+		B06AE7391C74FBFB00F2D387 /* LFCGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCGzipUtility.h; sourceTree = "<group>"; };
+		B06AE73A1C74FBFB00F2D387 /* LFCGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCGzipUtility.m; sourceTree = "<group>"; };
+		B06AE73B1C74FBFB00F2D387 /* libz.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libz.tbd; sourceTree = "<group>"; };
+		B06AE7401C74FC4E00F2D387 /* map.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = map.tmx; sourceTree = "<group>"; };
+		B06AE7411C74FC4E00F2D387 /* p1_stand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1_stand.png; sourceTree = "<group>"; };
+		B06AE7431C74FC4E00F2D387 /* tiles_spritesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiles_spritesheet.png; sourceTree = "<group>"; };
+		B06AE74A1C74FCBE00F2D387 /* PlatformerDemo-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlatformerDemo-BridgingHeader.h"; sourceTree = "<group>"; };
+		B06AE74B1C74FE7500F2D387 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B06AE71F1C74FB7D00F2D387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06AE73E1C74FBFB00F2D387 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B06AE7191C74FB7D00F2D387 = {
+			isa = PBXGroup;
+			children = (
+				B06AE7241C74FB7D00F2D387 /* PlatformerDemo */,
+				B06AE7231C74FB7D00F2D387 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B06AE7231C74FB7D00F2D387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B06AE7221C74FB7D00F2D387 /* PlatformerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B06AE7241C74FB7D00F2D387 /* PlatformerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B06AE73F1C74FC4E00F2D387 /* PlatformerResources */,
+				B06AE7361C74FBFB00F2D387 /* JSTileMap */,
+				B06AE7251C74FB7D00F2D387 /* AppDelegate.swift */,
+				B06AE7271C74FB7D00F2D387 /* GameScene.swift */,
+				B06AE7291C74FB7D00F2D387 /* GameScene.sks */,
+				B06AE72B1C74FB7D00F2D387 /* Assets.xcassets */,
+				B06AE72D1C74FB7D00F2D387 /* MainMenu.xib */,
+				B06AE7301C74FB7D00F2D387 /* Info.plist */,
+				B06AE74A1C74FCBE00F2D387 /* PlatformerDemo-BridgingHeader.h */,
+				B06AE74B1C74FE7500F2D387 /* Utility.swift */,
+			);
+			path = PlatformerDemo;
+			sourceTree = "<group>";
+		};
+		B06AE7361C74FBFB00F2D387 /* JSTileMap */ = {
+			isa = PBXGroup;
+			children = (
+				B06AE7371C74FBFB00F2D387 /* JSTileMap.h */,
+				B06AE7381C74FBFB00F2D387 /* JSTileMap.m */,
+				B06AE7391C74FBFB00F2D387 /* LFCGzipUtility.h */,
+				B06AE73A1C74FBFB00F2D387 /* LFCGzipUtility.m */,
+				B06AE73B1C74FBFB00F2D387 /* libz.tbd */,
+			);
+			path = JSTileMap;
+			sourceTree = "<group>";
+		};
+		B06AE73F1C74FC4E00F2D387 /* PlatformerResources */ = {
+			isa = PBXGroup;
+			children = (
+				B06AE7401C74FC4E00F2D387 /* map.tmx */,
+				B06AE7411C74FC4E00F2D387 /* p1_stand.png */,
+				B06AE7421C74FC4E00F2D387 /* Tiles */,
+			);
+			path = PlatformerResources;
+			sourceTree = "<group>";
+		};
+		B06AE7421C74FC4E00F2D387 /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				B06AE7431C74FC4E00F2D387 /* tiles_spritesheet.png */,
+			);
+			path = Tiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B06AE7211C74FB7D00F2D387 /* PlatformerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B06AE7331C74FB7D00F2D387 /* Build configuration list for PBXNativeTarget "PlatformerDemo" */;
+			buildPhases = (
+				B06AE71E1C74FB7D00F2D387 /* Sources */,
+				B06AE71F1C74FB7D00F2D387 /* Frameworks */,
+				B06AE7201C74FB7D00F2D387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlatformerDemo;
+			productName = PlatformerDemo;
+			productReference = B06AE7221C74FB7D00F2D387 /* PlatformerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B06AE71A1C74FB7D00F2D387 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = mattbaranowski;
+				TargetAttributes = {
+					B06AE7211C74FB7D00F2D387 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B06AE71D1C74FB7D00F2D387 /* Build configuration list for PBXProject "PlatformerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B06AE7191C74FB7D00F2D387;
+			productRefGroup = B06AE7231C74FB7D00F2D387 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B06AE7211C74FB7D00F2D387 /* PlatformerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B06AE7201C74FB7D00F2D387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06AE7441C74FC4E00F2D387 /* map.tmx in Resources */,
+				B06AE72C1C74FB7D00F2D387 /* Assets.xcassets in Resources */,
+				B06AE7461C74FC4E00F2D387 /* tiles_spritesheet.png in Resources */,
+				B06AE72A1C74FB7D00F2D387 /* GameScene.sks in Resources */,
+				B06AE72F1C74FB7D00F2D387 /* MainMenu.xib in Resources */,
+				B06AE7451C74FC4E00F2D387 /* p1_stand.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B06AE71E1C74FB7D00F2D387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06AE74C1C74FE7500F2D387 /* Utility.swift in Sources */,
+				B06AE73C1C74FBFB00F2D387 /* JSTileMap.m in Sources */,
+				B06AE7281C74FB7D00F2D387 /* GameScene.swift in Sources */,
+				B06AE73D1C74FBFB00F2D387 /* LFCGzipUtility.m in Sources */,
+				B06AE7261C74FB7D00F2D387 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B06AE72D1C74FB7D00F2D387 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B06AE72E1C74FB7D00F2D387 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B06AE7311C74FB7D00F2D387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B06AE7321C74FB7D00F2D387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B06AE7341C74FB7D00F2D387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PlatformerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlatformerDemo/JSTileMap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattbaranowski.PlatformerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlatformerDemo/PlatformerDemo-BridgingHeader.h";
+			};
+			name = Debug;
+		};
+		B06AE7351C74FB7D00F2D387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PlatformerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlatformerDemo/JSTileMap",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattbaranowski.PlatformerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlatformerDemo/PlatformerDemo-BridgingHeader.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B06AE71D1C74FB7D00F2D387 /* Build configuration list for PBXProject "PlatformerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B06AE7311C74FB7D00F2D387 /* Debug */,
+				B06AE7321C74FB7D00F2D387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B06AE7331C74FB7D00F2D387 /* Build configuration list for PBXNativeTarget "PlatformerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B06AE7341C74FB7D00F2D387 /* Debug */,
+				B06AE7351C74FB7D00F2D387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B06AE71A1C74FB7D00F2D387 /* Project object */;
+}
