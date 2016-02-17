@@ -12,6 +12,7 @@ class GameScene: SKScene {
 
     var map : JSTileMap = JSTileMap(named: "map.tmx")
     var player = Player()
+    var previousUpdate : CFTimeInterval = 0
     
     override func didMoveToView(view: SKView) {
         self.backgroundColor = .skyBlueColor()
@@ -22,6 +23,10 @@ class GameScene: SKScene {
     }
     
     override func update(currentTime: CFTimeInterval) {
+        let delta = clamp(lower:0.0, upper:0.2, currentTime - self.previousUpdate)
+        self.previousUpdate = currentTime
+        
+        self.player.update(delta)
     }
     
     override func keyDown(theEvent:NSEvent) {
