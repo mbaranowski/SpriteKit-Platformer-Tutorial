@@ -142,9 +142,33 @@ class GameScene: SKScene {
         }
     }
     
+    enum KeyCode : Int {
+        case Jump = 32
+        case Forward = 100
+        case Backward = 97
+    }
+    
+    func playerAction(keyCode : KeyCode, activate : Bool) {
+        switch keyCode {
+        case .Jump:      self.player.shouldJump = activate
+        case .Forward:   self.player.forward = activate
+        case .Backward:  self.player.backward = activate
+        }
+    }
+    
     override func keyDown(theEvent:NSEvent) {
+        for codeUnit in theEvent.characters!.utf16 {
+            if let keyCode = KeyCode(rawValue:Int(codeUnit)) {
+                playerAction(keyCode, activate: true)
+            }
+        }
     }
     
     override func keyUp(theEvent:NSEvent) {
+        for codeUnit in theEvent.characters!.utf16 {
+            if let keyCode = KeyCode(rawValue:Int(codeUnit)) {
+                playerAction(keyCode, activate: false)
+            }
+        }
     }
 }
