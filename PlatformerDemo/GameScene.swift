@@ -28,6 +28,7 @@ class GameScene: SKScene {
         
         self.player.update(delta)
         self.handleCollisions(player, layer: self.map.layerNamed("walls"))
+        self.setViewpointCenter(self.player.position)
     }
     
     enum Direction : Int {
@@ -170,5 +171,23 @@ class GameScene: SKScene {
                 playerAction(keyCode, activate: false)
             }
         }
+    }
+    
+    // half of the scene view size
+    var halfViewPoint : CGPoint {
+        get { return CGPoint(x:self.size.width * 0.5, y:self.size.height * 0.5) }
+    }
+    
+    // full size of the map in pixels
+    var mapMaxPoint : CGPoint {
+        get { return CGPoint(x: self.map.mapSize.width  * self.map.tileSize.width,
+            y: self.map.mapSize.height * self.map.tileSize.height )
+        }
+    }
+    
+    func setViewpointCenter(pos : CGPoint) {
+        let actualPosition = clamp(lower: self.halfViewPoint, upper: self.mapMaxPoint - self.halfViewPoint, pos)
+        let offset = CGPoint(x:0, y: (self.size.height - self.mapPixelSize.height))
+        self.map.position = (self.halfViewPoint - actualPosition) - offset
     }
 }
