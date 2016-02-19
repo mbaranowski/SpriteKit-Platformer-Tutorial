@@ -2,6 +2,14 @@
 
 A simple 2d platformer game tutorial written in Swift 2.1, running as an OSX app, using SpriteKit. Heavily Based on the excellent [RayWenderlich.com SpriteKit platform tutorial](http://www.raywenderlich.com/62049/sprite-kit-tutorial-make-platform-game-like-super-mario-brothers-part-1) but rewritten in idiomatic Swift. Uses excellent art resources from [kenney.nl](http://kenney.nl). Uses a slightly modified JSTileMap to load maps created in [TileEd](<http://www.mapeditor.org>)
 
+To Play:
+
+* A - move Left
+* D - move Right
+* Space - Jump!
+
+or rewrite GameScene's keyDown & keyUp method.
+
 Each commit is a snapshot of game progress that illustrates various mechanims and for a live tutorial can be replayed by checking out each commit in order.
 
 1. Initial Commit - XCode project setup based on the default SpriteKit with all art assets included, utility code and JSTileMap
