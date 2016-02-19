@@ -1,5 +1,7 @@
 # Swift SpriteKit Platformer Tutorial
 
+*WARNING*: This project is being actively rebased and force-pushed to keep the history corresponding to stages in the tutorial. But feel free to fork and give feedback.
+
 A simple 2d platformer game tutorial written in Swift 2.1, running as an OSX app, using SpriteKit. Heavily Based on the excellent [RayWenderlich.com SpriteKit platform tutorial](http://www.raywenderlich.com/62049/sprite-kit-tutorial-make-platform-game-like-super-mario-brothers-part-1) but rewritten in idiomatic Swift. Uses excellent art resources from [kenney.nl](http://kenney.nl). Uses a slightly modified JSTileMap to load maps created in [TileEd](<http://www.mapeditor.org>)
 
 To Play:
